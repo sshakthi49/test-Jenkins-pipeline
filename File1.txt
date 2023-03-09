@@ -2,3 +2,4 @@ This is File1.
 Line1 added to File1
 Line2 added to the File1, skipping the staging area
 Line3 added to the File1 from the Branch2
+Line4 added to File1 from the main branch
