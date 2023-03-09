@@ -1,0 +1,3 @@
+This is File1.
+Line1 added to File1
+Line2 added to the File1, skipping the staging area
