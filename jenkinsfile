@@ -1,0 +1,32 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building...'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+            }
+        }
+        stage('Deploy') {
+            when {
+                environment(name:"mychoice", value:"Deploy")
+            }    
+            steps {
+                echo 'Deploying...'
+            }
+        }
+        stage('Release') {
+            when {
+             environment(name:"mychoice", value:"Release")   
+            }
+            steps {
+                echo 'Releasing...'
+            }
+        }
+    }
+}
